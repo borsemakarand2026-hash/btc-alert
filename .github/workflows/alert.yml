@@ -25,7 +25,7 @@ jobs:
       - run: pip install requests
 
       - name: Check for signals
-        run: python signal_alert.py --test
+        run: python signal_alert.py
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
